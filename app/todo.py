@@ -55,6 +55,8 @@ def main():
         None
     """
 
+    manager = TaskManager("tasks.json")
+
     while True:
         print(
             "\n"
@@ -73,7 +75,6 @@ def main():
 
         print("")
 
-        manager = TaskManager("tasks.json")
         tasks = manager.tasks_read()
 
         if choice == 1:
